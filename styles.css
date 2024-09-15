@@ -1,0 +1,120 @@
+body {
+    background-image: url(./material/picture/xiaoyesi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: url('./material/picture/luoqixi/luo.cur'), default;
+}
+
+.center {
+    width: 540px;
+    height: 120px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.scrolling-text-6s {
+    animation: marquee 6s linear infinite;
+}
+
+.scrolling-text-7s {
+    animation: marquee 7s linear infinite;
+    animation-direction: alternate;
+}
+
+.scrolling-text-10s {
+    animation: marquee 10s linear infinite;
+}
+
+.scrolling-text-11s {
+    animation: marquee 11s linear infinite;
+}
+
+.scrolling-text-12s {
+    animation: marquee 12s linear infinite;
+}
+
+.scrolling-text-14s {
+    animation: marquee 14s linear infinite;
+}
+
+.scrolling-text-15s {
+    animation: marquee 15s linear infinite;
+}
+
+.scrolling-text-18s {
+    animation: marquee 18s linear infinite;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(./material/picture/Pixel.ttf);
+}
+
+div,
+p {
+    font-family: Pixel;
+}
+
+
+.custom-button {
+
+    background-color: #fd748b;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.custom-button:hover {
+    background-color: #5739fd;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+    cursor: url('./material/picture/luoqixi/xi.cur'), pointer;
+}
+
+p {
+    cursor: url('./material/picture/luoqixi/qi.cur'),copy;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
