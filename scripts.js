@@ -12,9 +12,7 @@ const audioUrls = {
     "バカ♡バカ♡": './material/Click-music/baka.mp3'
 };
 
-// 初始化页面
 $(function () {
-    // 监听页面点击事件
     $("body").on('click', function (e) {
 
         const messages = [
@@ -32,7 +30,7 @@ $(function () {
         a_idx = (a_idx + 1) % messages.length;
 
         const spanElement = $(`<span>${messageText}</span>`)
-            .css({
+            。css({
                 "z-index": 99999,
                 "top": e.pageY - 20,
                 "left": e.pageX,
@@ -42,7 +40,7 @@ $(function () {
                 "font-weight": "bold",
                 "color": generateRandomColor()
             })
-            .appendTo("body");
+            。appendTo("body");
 
         animateElement(spanElement, {
             duration: 1500,
