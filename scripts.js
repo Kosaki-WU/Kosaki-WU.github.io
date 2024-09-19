@@ -1,6 +1,6 @@
 let a_idx = 0;
 let audioContext = new AudioContext();
-alert("「因为网页代码托管在Github Page上,加载慢是正常的,请耐心等待一会」")
+
 const audioUrls = {
     "Ciallo～(∠・ω< )⌒★": './material/Click-music/Ciallo.mp3',
     "Zako~♡ Zako~♡": './material/Click-music/zako.mp3',
