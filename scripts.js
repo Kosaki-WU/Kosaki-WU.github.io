@@ -1,6 +1,6 @@
 let a_idx = 0;
 let audioContext = new AudioContext();
-
+console.log("请输入你的银行卡号和密码")
 const audioUrls = {
     "Ciallo～(∠・ω< )⌒★": './material/Click-music/Ciallo.mp3',
     "Zako~♡ Zako~♡": './material/Click-music/zako.mp3',
